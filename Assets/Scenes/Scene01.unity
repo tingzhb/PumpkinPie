@@ -607,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554255263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0113782, y: -0.47106352, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 995919754}
@@ -850,6 +850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995919754}
   - component: {fileID: 995919755}
+  - component: {fileID: 995919756}
   m_Layer: 0
   m_Name: PUMPKIN
   m_TagString: Untagged
@@ -865,7 +866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995919753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0113782, y: -0.5289365, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 2.1369982, y: 1.682886, z: 2.1369982}
   m_Children: []
   m_Father: {fileID: 554255264}
@@ -923,6 +924,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &995919756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995919753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292649745f6f0fb4cbf9569220623291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &1530028020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,8 +1107,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766685694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0113782, y: -5.5289364, z: 0}
-  m_LocalScale: {x: 23.494768, y: 11.088, z: 1}
+  m_LocalPosition: {x: 0.04, y: -4.71, z: 0}
+  m_LocalScale: {x: 27.290644, y: 11.824313, z: 1}
   m_Children: []
   m_Father: {fileID: 1941755332}
   m_RootOrder: 0
@@ -1175,7 +1189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941755331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0113782, y: -0.47106352, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1766685695}
