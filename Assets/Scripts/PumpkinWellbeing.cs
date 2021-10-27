@@ -5,6 +5,7 @@ using UnityEngine;
 public class PumpkinWellbeing : MonoBehaviour {
 	[SerializeField] public int health;
 	[SerializeField] int maxHealth;
+	public GameObject ouch;
 	private void Awake() {
 		health = maxHealth;
 	}
@@ -14,6 +15,5 @@ public class PumpkinWellbeing : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other) {
 		TakeDamage(10);
-		Debug.Log("Ouch!");
 	}
 }

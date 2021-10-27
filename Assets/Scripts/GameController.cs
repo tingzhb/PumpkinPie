@@ -10,10 +10,15 @@ public class GameController : MonoBehaviour {
     public GameObject Enemy3;
     public GameObject Enemy4;
     public GameObject PUMPKIN;
-
+    public GameObject gg;
 
     private void Awake() {
         Round1();
+    }
+    private void Update() {
+        if (PUMPKIN.GetComponent<PumpkinWellbeing>().health == 0) {
+            GameOver();
+        }
     }
     private void LateUpdate() {
         if (PUMPKIN.GetComponent<PumpkinWellbeing>().health <= 100 && PUMPKIN.GetComponent<PumpkinWellbeing>().health > 50) {
@@ -38,5 +43,13 @@ public class GameController : MonoBehaviour {
         Enemy2.SetActive(true);
         Enemy3.SetActive(true);
         Enemy4.SetActive(true);
+    }
+    void GameOver() {
+        PUMPKIN.SetActive(false);
+        Enemy1.SetActive(false);
+        Enemy2.SetActive(false);
+        Enemy3.SetActive(false);
+        Enemy4.SetActive(false);
+        gg.SetActive(true);
     }
 }

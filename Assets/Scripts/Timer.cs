@@ -5,6 +5,8 @@ public class Timer : MonoBehaviour {
 	private Text timerText;
 	private float timePassed;
 	private int minutesPassed;
+	public GameObject PUMPKIN;
+
 	
 	void Start()
 	{
@@ -12,12 +14,13 @@ public class Timer : MonoBehaviour {
 	}
 
 	void Update() {
-		//set timer UI
-		timePassed += Time.deltaTime;
-		timerText.text = minutesPassed + "m " + timePassed.ToString("0.00") + "s";
-		if (timePassed >= 60) {
-			minutesPassed++;
-			timePassed %= 60;
+		while (PUMPKIN.GetComponent<PumpkinWellbeing>().health > 0) {
+			timePassed += Time.deltaTime;
+			if (timePassed >= 60) {
+				minutesPassed++;
+				timePassed %= 60;
+			}
+			timerText.text = minutesPassed + "m " + timePassed.ToString("0.00") + "s";
 		}
 	}
 }
