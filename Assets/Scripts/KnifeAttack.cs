@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class KnifeAttack : MonoBehaviour
 {
-	public GameObject Knife;
+	public GameObject knife;
+	[SerializeField] int dropSpeed;
 
 	void Update()
     {
-	    if (!Knife.activeInHierarchy) {
-		    if (Random.Range(1, 1001) > 999) {
+	    if (!knife.activeInHierarchy) {
 			    SpawnKnife();
-		    }
 	    }
 	    else {
 			    MoveKnife();
 	    }
     }
 	public void SpawnKnife() {
-		Knife.SetActive(true);
+		knife.SetActive(true);
+		transform.position= new Vector3(Random.Range(-8, 9),0);
 	}
 	void MoveKnife() {
-		transform.Translate(0,-2 * Time.deltaTime, 0);
+		transform.Translate(0,dropSpeed * Time.deltaTime, 0);
 	}
 }
