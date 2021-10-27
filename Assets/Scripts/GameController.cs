@@ -7,6 +7,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
     public GameObject Enemy1;
     public GameObject Enemy2;
+    public GameObject Enemy3;
+    public GameObject Enemy4;
     public GameObject PUMPKIN;
 
 
@@ -25,5 +27,7 @@ public class GameController : MonoBehaviour {
     void Round2() {
         Enemy1.SetActive(false);
         Enemy2.SetActive(false);
+        Enemy3.SetActive(true);
+        Enemy4.SetActive(true);
     }
 }
