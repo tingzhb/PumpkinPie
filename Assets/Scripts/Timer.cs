@@ -13,14 +13,12 @@ public class Timer : MonoBehaviour {
 		timerText = GetComponent<Text>();
 	}
 
-	void Update() {
-		while (PUMPKIN.GetComponent<PumpkinWellbeing>().health > 0) {
-			timePassed += Time.deltaTime;
-			if (timePassed >= 60) {
-				minutesPassed++;
-				timePassed %= 60;
-			}
-			timerText.text = minutesPassed + "m " + timePassed.ToString("0.00") + "s";
-		}
+	void Update() { 
+		timePassed += Time.deltaTime;
+		if (timePassed >= 60) { 
+			minutesPassed++;
+			timePassed %= 60;
+		} 
+		timerText.text = minutesPassed + "m " + timePassed.ToString("0.00") + "s"; 
 	}
 }
