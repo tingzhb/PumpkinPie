@@ -7,7 +7,8 @@ public class GameController : MonoBehaviour {
     public GameObject Enemy1;
     public GameObject Enemy2;
 
-    private void Update() {
+    private void Awake() {
         Enemy1.SetActive(true);
+        Enemy2.SetActive(true);
     }
 }

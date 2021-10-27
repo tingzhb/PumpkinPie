@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PumpkinWellbeing : MonoBehaviour {
-	[SerializeField] int health;
+	[SerializeField] public int health;
 	[SerializeField] int maxHealth;
 	private void Awake() {
 		health = maxHealth;
@@ -16,6 +16,4 @@ public class PumpkinWellbeing : MonoBehaviour {
 		TakeDamage(10);
 		Debug.Log("Ouch!");
 	}
-    // Start is called before the first frame update
-
 }
