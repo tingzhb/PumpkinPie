@@ -10,17 +10,17 @@ public class PinAttack : MonoBehaviour
 	void Update()
 	{
 		if (!pin.activeInHierarchy) {
-			SpawnKnife();
+			SpawnPin();
 		}
 		else {
-			MoveKnife();
+			MovePin();
 		}
 	}
-	public void SpawnKnife() {
+	public void SpawnPin() {
 		pin.SetActive(true);
-		transform.position= new Vector3(-9,Random.Range(-5, 6));
+		transform.position= new Vector3(-20,Random.Range(-5, 3));
 	}
-	void MoveKnife() {
+	void MovePin() {
 		transform.Translate(moveSpeed * Time.deltaTime, 0,0);
 	}
 }

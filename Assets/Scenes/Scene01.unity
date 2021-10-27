@@ -219,6 +219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1486261308}
     m_Modifications:
+    - target: {fileID: -7025231124746565671, guid: c94e06a56f5fc694f81127d8c239ce23, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6921604068670604207, guid: c94e06a56f5fc694f81127d8c239ce23, type: 3}
       propertyPath: m_Name
       value: Pin 2
@@ -752,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knife: {fileID: 1171094966}
-  dropSpeed: -11
+  dropSpeed: -15
 --- !u!4 &356014934
 Transform:
   m_ObjectHideFlags: 0
@@ -846,7 +850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knife: {fileID: 43340673}
-  dropSpeed: -4
+  dropSpeed: -10
 --- !u!4 &384262926
 Transform:
   m_ObjectHideFlags: 0
@@ -1468,8 +1472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cacaa6f93190574cb12947cb8eb0b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  health: 150
+  maxHealth: 150
 --- !u!50 &995919758
 Rigidbody2D:
   serializedVersion: 4
@@ -1557,7 +1561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pin: {fileID: 145955984}
-  moveSpeed: 5
+  moveSpeed: 10
 --- !u!4 &1285052509
 Transform:
   m_ObjectHideFlags: 0
@@ -1566,7 +1570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285052507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.3, y: -2.36, z: 0}
+  m_LocalPosition: {x: -20, y: -2.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 145955988}
@@ -1603,7 +1607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pin: {fileID: 2145431636}
-  moveSpeed: 5
+  moveSpeed: 6
 --- !u!4 &1486261308
 Transform:
   m_ObjectHideFlags: 0
@@ -1612,7 +1616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486261306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.85, y: -2.36, z: 0}
+  m_LocalPosition: {x: -20, y: -2.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2145431640}
@@ -1771,6 +1775,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1285052509}
     m_Modifications:
+    - target: {fileID: -7025231124746565671, guid: c94e06a56f5fc694f81127d8c239ce23, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6921604068670604207, guid: c94e06a56f5fc694f81127d8c239ce23, type: 3}
       propertyPath: m_Name
       value: Pin
@@ -1782,6 +1790,10 @@ PrefabInstance:
     - target: {fileID: 8891692111560510879, guid: c94e06a56f5fc694f81127d8c239ce23, type: 3}
       propertyPath: m_Mass
       value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891692111560510879, guid: c94e06a56f5fc694f81127d8c239ce23, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9073413994190421159, guid: c94e06a56f5fc694f81127d8c239ce23, type: 3}
       propertyPath: m_RootOrder

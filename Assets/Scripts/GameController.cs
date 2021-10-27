@@ -16,8 +16,11 @@ public class GameController : MonoBehaviour {
         Round1();
     }
     private void LateUpdate() {
-        if (PUMPKIN.GetComponent<PumpkinWellbeing>().health <= 50) {
+        if (PUMPKIN.GetComponent<PumpkinWellbeing>().health <= 100 && PUMPKIN.GetComponent<PumpkinWellbeing>().health > 50) {
             Round2();
+        }
+        else if (PUMPKIN.GetComponent<PumpkinWellbeing>().health <= 50) {
+            Round3();
         }
     }
     void Round1() {
@@ -27,6 +30,12 @@ public class GameController : MonoBehaviour {
     void Round2() {
         Enemy1.SetActive(false);
         Enemy2.SetActive(false);
+        Enemy3.SetActive(true);
+        Enemy4.SetActive(true);
+    }
+    void Round3() {
+        Enemy1.SetActive(true);
+        Enemy2.SetActive(true);
         Enemy3.SetActive(true);
         Enemy4.SetActive(true);
     }
