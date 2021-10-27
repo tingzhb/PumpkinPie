@@ -12,7 +12,6 @@ public class PumpkinComplaints : MonoBehaviour {
 
 	void Update() {
 		timePassed += Time.deltaTime % 60;
-		Debug.Log(timePassed);
 		if (timePassed <= 5) {
 			complaint.text = "I don't wana be pie!";
 		}
