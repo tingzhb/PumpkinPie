@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KnifeDestroy : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
-        gameObject.SetActive(false);
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Killer")) {
+            gameObject.SetActive(false);
+        }
     }
 }
