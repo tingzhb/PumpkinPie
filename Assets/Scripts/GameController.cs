@@ -51,5 +51,6 @@ public class GameController : MonoBehaviour {
         Enemy3.SetActive(false);
         Enemy4.SetActive(false);
         gg.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
